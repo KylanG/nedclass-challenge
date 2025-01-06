@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Main CSS */
+
+.container {
+    flex-flow: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    line-height: 115%;
+    color: #301F10;
+}
+
+p.curly-type-h1 {
+    font-family: "Borel", sans-serif;
+    font-size: 54px;
+    line-height: 100%;
+    font-weight: 400;
+    color: #EA780D;
+}
+
+p.curly-type-h2 {
+    font-family: "Borel", sans-serif;
+    font-size: 32px;
+    line-height: 100%;
+    font-weight: 400;
+    color: #EA780D;
+}
+
+/* Buttons */
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap; /* Zorgt dat knoppen doorlopen naar een nieuwe regel indien nodig */
+    gap: 0.75rem;
+}
+
+button.level, button.location {
+    padding: 14px 24px;
+    border-radius: 50px;
+    border: 0px;
+    background-color: #ECE6DF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ECE6DF;
+    color: black;
+    cursor: not-allowed;
+}
+
+button:active {
+    background-color: #EA780D;
+    color: white;
+}
+
+.button-group button.selected {
+    background-color: #EA780D;
+    color: white;
+    border: none;
+}
+
+/* Filter Tool */
+
+.school-filter-tool {
+    display: grid;
+    gap: 55px;
+    padding: 120px 0px;
+}
+
+#startniveau, #locaties {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.keuze-formulier {
+    padding: 55px;
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    display: grid;
+    gap: 55px;
+}
+
+.introductie-tekst {
+    width: 75%;
+    padding: 0px 55px;
+}
+
+.introductie-tekst p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 200%;
+}
+
+/* Resultaat */
+
+#resultaat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECE6DF;
+    border-radius: 30px;
+    height: 400px;
+    text-align: center;
+}
+
+#resultaat ul {
+    list-style: none;
+    padding: 0;
+}
+
+#resultaat li {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background-color: #ECE6DF;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a.main-button {
+    display: inline-block !important; 
+    background-color:#EA780D;
+    padding: 16px 24px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}

@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Hero Section */
+
+h1.h1-style {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.625rem;
+    color: #301F10;
+}
+
+h2.curly-text {
+    font-family: "Borel", serif;
+    font-size: 3.375rem;
+    font-weight: 100;
+    color: #EA780D;
+
+}
+
+a.call-to-action {
+    text-decoration: none;
+    padding: 16px 24px;
+    border: 0px;
+    background-color: #EA780D;
+    font-family: "Poppins";
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: white;
+    display: inline-block;
+}
+
+body > header > div > div.container > div.logo > a > img {
+    height: 30px;
+}
+
+.hero-section {
+    background-color: #ECE6DF;
+    height: 800px;
+    align-content: center;
+    justify-content: center;
+}
+

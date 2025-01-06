@@ -1,0 +1,141 @@
+{
+  "gymnasium": {
+    "Rotterdam": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" },
+          { "title": "Jaar 4" },
+          { "title": "Jaar 5" },
+          { "title": "Jaar 6" }
+        ]
+      }
+    ],
+    "Utrecht": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" },
+          { "title": "Jaar 4" },
+          { "title": "Jaar 5" },
+          { "title": "Jaar 6" }
+        ]
+      }
+    ]
+  },
+  "havo/vwo": {
+    "Amsterdam": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" },
+          { "title": "Jaar 4" },
+          { "title": "Jaar 5" },
+          { "title": "Jaar 6 (optioneel)" }
+        ]
+      }
+    ],
+    "Rotterdam": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" },
+          { "title": "Jaar 4" },
+          { "title": "Jaar 5" },
+          { "title": "Jaar 6 (optioneel)" }
+        ]
+      }
+    ],
+    "Middelburg": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" },
+          { "title": "Jaar 4" },
+          { "title": "Jaar 5" },
+          { "title": "Jaar 6 (optioneel)" }
+        ]
+      }
+    ]
+  },
+  "vmbo-tl": {
+    "Utrecht": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" },
+          { "title": "Jaar 4" }
+        ]
+      }
+    ]
+  },
+  "vmbo-kb": {
+    "Amsterdam": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" },
+          { "title": "Jaar 4" }
+        ]
+      }
+    ],
+    "Den Haag": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" },
+          { "title": "Jaar 4" }
+        ]
+      }
+    ]
+  },
+  "vmbo-bb": {
+    "Middelburg": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" },
+          { "title": "Jaar 4" }
+        ]
+      }
+    ]
+  },
+  "praktijkonderwijs": {
+    "Amsterdam": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" }
+        ]
+      }
+    ],
+    "Eindhoven": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" }
+        ]
+      }
+    ],
+    "Rotterdam": [
+      {
+        "years": [
+          { "title": "Jaar 1" },
+          { "title": "Jaar 2" },
+          { "title": "Jaar 3" }
+        ]
+      }
+    ]
+  }
+}

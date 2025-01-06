@@ -1,0 +1,273 @@
+@use 'sass:math';
+
+// Variables
+$primary-color: #EA780D;
+$secondary-color: #ECE6DF;
+$white-color: white;
+$text-color: #301F10;
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Borel", sans-serif;
+
+// Base Font Size for REM Calculation
+$base-font-size: 16px;
+
+// Font Sizes (in REM)
+$font-size-h1: math.div(48, 16) * 1rem; // 3rem
+$font-size-h2: math.div(40, 16) * 1rem; // 2.5rem
+$font-size-h3: math.div(32, 16) * 1rem; // 2rem
+$font-size-h4: math.div(28, 16) * 1rem; // 1.75rem
+$font-size-h5: math.div(24, 16) * 1rem; // 1.5rem
+$font-size-h6: math.div(20, 16) * 1rem; // 1.25rem
+$font-size-h7: math.div(16, 16) * 1rem; // 1rem
+
+// Global Reset
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+// Main CSS
+.container {
+    flex-flow: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// Header Styles
+h1 {
+    font-family: $font-primary;
+    line-height: 115%;
+    color: $text-color;
+    font-size: $font-size-h1; // 3rem
+}
+
+h2 {
+    font-family: $font-primary;
+    line-height: 115%;
+    color: $text-color;
+    font-size: $font-size-h2; // 2.5rem
+}
+
+h3 {
+    font-family: $font-primary;
+    line-height: 115%;
+    color: $text-color;
+    font-size: $font-size-h3; // 2rem
+}
+
+h4 {
+    font-family: $font-primary;
+    line-height: 115%;
+    color: $text-color;
+    font-size: $font-size-h4; // 1.75rem
+}
+
+h5 {
+    font-family: $font-primary;
+    line-height: 115%;
+    color: $text-color;
+    font-size: $font-size-h5; // 1.5rem
+}
+
+h6 {
+    font-family: $font-primary;
+    line-height: 115%;
+    color: $text-color;
+    font-size: $font-size-h6; // 1.25rem
+    font-weight: 500;
+}
+
+// Optional: Add H7
+h7 {
+    font-family: $font-primary;
+    line-height: 115%;
+    color: $text-color;
+    font-size: $font-size-h7; // 1rem
+}
+
+p {
+    &.curly-type-h1 {
+        font-family: $font-secondary;
+        font-size: 54px;
+        line-height: 100%;
+        font-weight: 400;
+        color: $primary-color;
+    }
+
+    &.curly-type-h2 {
+        font-family: $font-secondary;
+        font-size: 32px;
+        line-height: 100%;
+        font-weight: 400;
+        color: $primary-color;
+    }
+}
+
+// Buttons
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem; // Ensures buttons wrap when needed
+}
+
+button {
+    &.level, &.location {
+        padding: 14px 24px;
+        border-radius: 50px;
+        border: 0px;
+        background-color: $secondary-color;
+        font-family: $font-primary;
+        font-weight: 500;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:disabled {
+            background-color: $secondary-color;
+            color: black;
+            cursor: not-allowed;
+        }
+
+        &:active {
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+
+    &.selected {
+        background-color: $primary-color;
+        color: $white-color;
+        border: none;
+    }
+}
+
+// Filter Tool
+.school-filter-tool {
+    display: grid;
+    gap: 55px;
+    padding: 120px 0px;
+}
+
+#startniveau, #locaties {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.keuze-formulier {
+    padding: 55px;
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    display: grid;
+    gap: 55px;
+}
+
+.introductie-tekst {
+    width: 75%;
+    padding: 0px 55px;
+
+    p {
+        font-family: $font-primary;
+        font-size: 18px;
+        line-height: 200%;
+    }
+}
+
+// Resultaat Section
+#resultaat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-color;
+    border-radius: 30px;
+    height: 400px;
+    text-align: center;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        font-family: $font-primary;
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 40px;
+        border-radius: 100px;
+        background-color: $primary-color;
+        color: $white-color;
+        margin: 0px 20px;
+    }
+}
+
+// Hero Section
+
+header {
+    height: 90px;
+    align-content: center;
+    margin-bottom: -90px;
+}
+
+.header-logo {
+    height: 1.875rem;
+}
+
+.hero-section {
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+    .hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+
+        .hero-text {
+            max-width: 50%;
+
+            .heading {
+                font-family: $font-primary;
+                font-size: $font-size-h1; // 3rem
+                font-weight: 700;
+                color: $text-color;
+                line-height: 1.2;
+                margin-bottom: 20px;
+            }
+
+            .cta-button {
+                background-color: $primary-color;
+                color: $white-color;
+                font-family: $font-primary;
+                font-size: $font-size-h7; // 1rem
+                font-weight: 400;
+                padding: 15px 25px;
+                border: none;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: darken($primary-color, 3%);
+                }
+            }
+        }
+
+        .hero-image {
+            max-width: 40%;
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+}
